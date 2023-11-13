@@ -37,8 +37,10 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
     "cross-env": "^7.0.3",
+    "daisyui": "^4.0.3",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
