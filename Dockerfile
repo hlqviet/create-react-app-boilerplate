@@ -30,8 +30,8 @@ FROM nginx:alpine AS runner
 WORKDIR /app
 
 RUN rm -rf /usr/share/nginx/html/*
-COPY --from=builder ./build /usr/share/nginx/html
-COPY --from=builder ./.nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
 RUN touch /var/run/nginx.pid
 RUN chown -R nginx:nginx /var/run/nginx.pid /usr/share/nginx/html /var/cache/nginx /var/log/nginx /etc/nginx/conf.d
 
