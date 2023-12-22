@@ -4,4 +4,5 @@ services:
       context: .
     container_name: react-app
     ports:
-      - '$PORT:80'
+      - '127.0.0.1:$PORT:80'
+      - '[::1]:$PORT:80'
