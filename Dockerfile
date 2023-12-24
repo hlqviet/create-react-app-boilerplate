@@ -22,7 +22,7 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:alpine AS runner
+FROM nginx:alpine-slim AS runner
 
 WORKDIR /app
 
